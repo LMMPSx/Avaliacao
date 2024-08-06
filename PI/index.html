@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
+    <title>Projeto</title>
+</head>
+<body>
+    <section class="formulario-container flex">
+        <div class="formulario-registro">
+            <div class="interface">
+                <h2 class="titulo">Faça seu cadastro</h2>
+                <form action="registro.php" method="post">
+                    <input type="email" name="email" id="email-registro" placeholder="Seu e-mail:" required>
+                    <input type="password" name="senha" id="senha-registro" placeholder="Sua senha">
+                    <select name="tipo_usuario" id="tipo_usuario">
+                        <option value="ALUNO">Aluno</option>
+                        <option value="PROFESSOR">Gestor</option>
+                    </select>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </div><!--formulario-registro-->
+
+        <div class="divider"></div><!--divider-->
+
+        <div class="formulario-login">
+            <div class="interface">
+                <h2 class="titulo">Faça seu login</h2>
+                <form action="login.php" method="post">
+                    <input type="email" name="email" id="email-login" placeholder="Seu e-mail:" required>
+                    <input type="password" name="senha" id="senha-login" placeholder="Sua senha">
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </div><!--formulario-login-->
+    </section><!--formulario-container-->
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Discente</title>
+    <link rel="stylesheet" href="avaliacao.css">
+</head>
+<body>
+    <h1 id="texto1" >Olá, seja muito bem vindo a avaliação do curso</h1>
+
+    <form action="processa.php" method="post">
+        <div class="form-group">
+        
+        <label for="text">Informe seu Nome</label><br>
+        <input type="text" name="nome" id="nome"><br>
+
+        <label for="text">Informe sua Turma</label><br>
+        <input type="text" name="turma" id="turma"><br>
+
+        <h1>DOCENTE (Profissional que desenvolveu o curso)</h1>
+
+        <p>O docente esteve presente todos os dias?</p>
+        <input type="radio" name="docente_presenca" value="Sim">Sim
+        <input type="radio" name="docente_presenca" value="Não">Não
+        <input type="radio" name="docente_presenca" value="Parcial">Parcial
+        <input type="radio" name="docente_presenca" value="Não Atendeu">Não Atendeu
+
+        <p>O docente chegou sempre na hora prevista para o início do curso?</p>
+        <input type="radio" name="docente_pontualidade" value="Sim">Sim
+        <input type="radio" name="docente_pontualidade" value="Não">Não
+        <input type="radio" name="docente_pontualidade" value="Parcial">Parcial
+        <input type="radio" name="docente_pontualidade" value="Não Atendeu">Não Atendeu
+
+        <p>A comunicação do docente foi clara?</p>
+        <input type="radio" name="docente_comunicacao" value="Sim">Sim
+        <input type="radio" name="docente_comunicacao" value="Não">Não
+        <input type="radio" name="docente_comunicacao" value="Parcial">Parcial
+        <input type="radio" name="docente_comunicacao" value="Não Atendeu">Não Atendeu
+
+        <p>O docente apresentou domínio do conteúdo?</p>
+        <input type="radio" name="docente_dominio" value="Sim">Sim
+        <input type="radio" name="docente_dominio" value="Não">Não
+        <input type="radio" name="docente_dominio" value="Parcial">Parcial
+        <input type="radio" name="docente_dominio" value="Não Atendeu">Não Atendeu
+
+        <p>O docente despertou interesse dos alunos durante as aulas?</p>
+        <input type="radio" name="docente_interesse" value="Sim">Sim
+        <input type="radio" name="docente_interesse" value="Não">Não
+        <input type="radio" name="docente_interesse" value="Parcial">Parcial
+        <input type="radio" name="docente_interesse" value="Não Atendeu">Não Atendeu
+
+        <p>O docente teve boa capacidade de interação com os alunos?</p>
+        <input type="radio" name="docente_interacao" value="Sim">Sim
+        <input type="radio" name="docente_interacao" value="Não">Não
+        <input type="radio" name="docente_interacao" value="Parcial">Parcial
+        <input type="radio" name="docente_interacao" value="Não Atendeu">Não Atendeu
+
+        <p>A forma de avaliar do docente foi satisfatória?</p>
+        <input type="radio" name="docente_avaliacao" value="Sim">Sim
+        <input type="radio" name="docente_avaliacao" value="Não">Não
+        <input type="radio" name="docente_avaliacao" value="Parcial">Parcial
+        <input type="radio" name="docente_avaliacao" value="Não Atendeu">Não Atendeu
+
+        <h1>CONTEÚDO DO CURSO</h1>
+
+        <p>O curso atendeu as necessidades e objetivos desejados?</p>
+        <input type="radio" name="curso_needs" value="Sim">Sim
+        <input type="radio" name="curso_needs" value="Não">Não
+        <input type="radio" name="curso_needs" value="Parcial">Parcial
+        <input type="radio" name="curso_needs" value="Não Atendeu">Não Atendeu
+
+        <p>Os temas trabalhados foram atuais?</p>
+        <input type="radio" name="curso_temas" value="Sim">Sim
+        <input type="radio" name="curso_temas" value="Não">Não
+        <input type="radio" name="curso_temas" value="Parcial">Parcial
+        <input type="radio" name="curso_temas" value="Não Atendeu">Não Atendeu
+
+        <p>A carga horária foi suficiente?</p>
+        <input type="radio" name="curso_carga" value="Sim">Sim
+        <input type="radio" name="curso_carga" value="Não">Não
+        <input type="radio" name="curso_carga" value="Parcial">Parcial
+        <input type="radio" name="curso_carga" value="Não Atendeu">Não Atendeu
+
+        <p>Houve relação entre a teoria e prática?</p>
+        <input type="radio" name="curso_relacao" value="Sim">Sim
+        <input type="radio" name="curso_relacao" value="Não">Não
+        <input type="radio" name="curso_relacao" value="Parcial">Parcial
+        <input type="radio" name="curso_relacao" value="Não Atendeu">Não Atendeu
+
+        <h1>MATERIAL/ INSUMOS</h1>
+
+        <p>Os materiais foram suficientes para atender as atividades desenvolvidas durante o curso?</p>
+        <input type="radio" name="material_suficiente" value="Sim">Sim
+        <input type="radio" name="material_suficiente" value="Não">Não
+        <input type="radio" name="material_suficiente" value="Parcial">Parcial
+        <input type="radio" name="material_suficiente" value="Não Atendeu">Não Atendeu
+
+        <h1>INSTALAÇÕES FÍSICAS (Local onde aconteceu o curso)</h1>
+
+        <p>O espaço onde aconteceu o curso foi satisfatório?</p>
+        <input type="radio" name="instalacoes_satisfatorias" value="Sim">Sim
+        <input type="radio" name="instalacoes_satisfatorias" value="Não">Não
+        <input type="radio" name="instalacoes_satisfatorias" value="Parcial">Parcial
+        <input type="radio" name="instalacoes_satisfatorias" value="Não Atendeu">Não Atendeu
+
+        <h1>ACOMPANHAMENTO ADMINISTRATIVO E PEDAGÓGICO</h1>
+
+        <p>Coordenação esteve presente nos momentos necessários?</p>
+        <input type="radio" name="coordenacao_presente" value="Sim">Sim
+        <input type="radio" name="coordenacao_presente" value="Não">Não
+        <input type="radio" name="coordenacao_presente" value="Parcial">Parcial
+        <input type="radio" name="coordenacao_presente" value="Não Atendeu">Não Atendeu
+
+        <h1>AUTO AVALIAÇÃO</h1>
+
+        <p>Você esteve presente todos os dias?</p>
+        <input type="radio" name="aluno_presenca" value="Sim">Sim
+        <input type="radio" name="aluno_presenca" value="Não">Não
+        <input type="radio" name="aluno_presenca" value="Parcial">Parcial
+        <input type="radio" name="aluno_presenca" value="Não Atendeu">Não Atendeu
+
+        <p>Você chegou sempre no horário previsto para início do curso?</p>
+        <input type="radio" name="aluno_pontualidade" value="Sim">Sim
+        <input type="radio" name="aluno_pontualidade" value="Não">Não
+        <input type="radio" name="aluno_pontualidade" value="Parcial">Parcial
+        <input type="radio" name="aluno_pontualidade" value="Não Atendeu">Não Atendeu
+
+        <p>Você se sentiu motivado/interessado durante as aulas?</p>
+        <input type="radio" name="aluno_motivacao" value="Sim">Sim
+        <input type="radio" name="aluno_motivacao" value="Não">Não
+        <input type="radio" name="aluno_motivacao" value="Parcial">Parcial
+        <input type="radio" name="aluno_motivacao" value="Não Atendeu">Não Atendeu
+
+        <p>Você contribuiu com sua participação para o grupo?</p>
+        <input type="radio" name="aluno_participacao" value="Sim">Sim
+        <input type="radio" name="aluno_participacao" value="Não">Não
+        <input type="radio" name="aluno_participacao" value="Parcial">Parcial
+        <input type="radio" name="aluno_participacao" value="Não Atendeu">Não Atendeu
+
+        <p>Você considera que teve um bom aproveitamento?</p>
+        <input type="radio" name="aluno_aproveitamento" value="Sim">Sim
+        <input type="radio" name="aluno_aproveitamento" value="Não">Não
+        <input type="radio" name="aluno_aproveitamento" value="Parcial">Parcial
+        <input type="radio" name="aluno_aproveitamento" value="Não Atendeu">Não Atendeu
+
+        <p>Você se considera capaz de desenvolver o que aprendeu no curso?</p>
+        <input type="radio" name="aluno_capacidade" value="Sim">Sim
+        <input type="radio" name="aluno_capacidade" value="Não">Não
+        <input type="radio" name="aluno_capacidade" value="Parcial">Parcial
+        <input type="radio" name="aluno_capacidade" value="Não Atendeu">Não Atendeu
+
+        <p>Caso seja do seu interesse, deixe aqui comentários e sugestões, objetivando a melhoria dos próximos cursos:</p>
+        <textarea name="comentarios" id="comentarios"></textarea>
+
+        <h1>COMO FICOU SABENDO SOBRE O CURSO?</h1>
+        <input type="radio" id=" " name="curso_origem" value="Redes sociais">Redes sociais
+        <input type="radio" id=" " name="curso_origem" value="Indicação de alguém">Indicação de alguém
+        <input type="radio" id=" " name="curso_origem" value="Panfletagem">Panfletagem
+        <input type="radio" id=" " name="curso_origem" value="Rádio/TV">Rádio/TV‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
+        <input type="radio" id=" " name="curso_origem" value="Senac">Senac‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
+        <input type="radio" id=" " name="curso_origem" value="Outro">Outro
+    </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>

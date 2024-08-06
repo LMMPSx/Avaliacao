@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('Logo.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    z-index: 1; 
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+}
+
+.formulario-login, .formulario-registro {
+    flex: 1;
+    padding: 30px;
+}
+
+.formulario-login {
+    border-right: 1px solid #ccc;
+}
+
+.formulario-registro {
+    border-left: 1px solid #ccc;
+}
+
+.interface {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-enviar input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-enviar input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.divider {
+    width: 1px;
+    background-color: #ccc;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .formulario-container {
+        flex-direction: column;
+    }
+
+    .formulario-login, .formulario-registro {
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .formulario-login {
+        border-right: none;
+    }
+
+    .divider {
+        width: 100%;
+        height: 1px;
+    }
+}

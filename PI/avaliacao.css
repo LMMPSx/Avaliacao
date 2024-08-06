@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #004C94;
+    color: #333;
+}
+
+h1 {
+    color: #000000;
+    border-bottom: 2px solid #F7941D;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#texto1 {
+    color: #ddd;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #F7941D;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 25%;
+    max-width: 200px;
+    margin: 20px auto 0;
+    margin-top: 20px;
+    margin-left: 37%;
+}
+
+button:hover {
+    background-color: #FDC180;
+}
+
+input[type="radio"] {
+    margin-left: 100px;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+
+p {
+    margin: 10px 0;
+}
+
+textarea {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
